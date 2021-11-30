@@ -38,7 +38,36 @@ export const Greetings = styled.p`
 
 
 export const DecorativeSection = styled.section`
+    height: 100%;
+    border-radius: 0 3.2rem 3.2rem 0;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-color: ${theme.colors.blue[500]}
 `
 
+export const Center = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        color: ${theme.colors.blue[400]};
+    }
+
+    a {
+        color: ${theme.colors.blue[500]};
+        text-decoration: none;
+        font-weight: 700;
+        margin-left: 0.3rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+`;
 
