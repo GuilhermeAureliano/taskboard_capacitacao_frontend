@@ -6,7 +6,6 @@ export const Container = styled.div`
     min-width: 300px;
     min-height: 100vh; 
     padding: 2.8rem;
-    padding: 2.8rem;
     gap: 0.3rem;
     display: grid;  
     grid-template-columns: 60% 40%;
