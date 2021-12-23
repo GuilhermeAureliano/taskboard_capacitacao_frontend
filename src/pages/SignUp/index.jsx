@@ -13,7 +13,7 @@ const SignUp = () => {
         <>
            <C.Container>
                <C.DecorativeSection>
-                    <Image src={PersonWithForm} alt="Pessao com Smarthphone" />
+                    <Image src={PersonWithForm} alt="Pessoa com form" />
                </C.DecorativeSection>
                <C.SignUpSection>
                    <C.Title>Registre-se</C.Title>
