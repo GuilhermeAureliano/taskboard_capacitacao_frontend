@@ -22,12 +22,14 @@ const LoginPage = () => {
 
             <C.Center>
                 <span>Não tem uma conta? </span>
-                <Link href='#' > Registre-se</Link>
+                <Link href='/SignUp' > Registre-se</Link>
             </C.Center>
             </C.LoginSection>
 
             <C.DecorativeSection>
+                <Image src={AbstractSquare} alt="Abstract Square" />
                 <Image src={PersonWithSmartphone} alt="Pessao com Smarthphone" />
+                <Image src={AbstractSquare} alt="Abstract Square" />
             </C.DecorativeSection>
 
         </C.Container>

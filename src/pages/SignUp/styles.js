@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 import theme from "../../styles/theme";
 
 export const Container = styled.div`
@@ -7,9 +6,10 @@ export const Container = styled.div`
     min-width: 300px;
     min-height: 100vh; 
     padding: 2.8rem;
-
+    padding: 2.8rem;
+    gap: 0.3rem;
     display: grid;  
-    grid-template-columns: 34% 66%;
+    grid-template-columns: 60% 40%;
     align-items: center;
     justify-content: center;
 
@@ -28,18 +28,12 @@ export const Container = styled.div`
     @media (max-width: 800px) {
         grid-template-columns: 1fr;
     }
-
 `;
 
-export const LoginSection = styled.section`
+export const SignUpSection = styled.section`
     height: 100%;
     padding: 7.2rem;
-    border-radius: 3.2rem 0 0 3.2rem;
-    background-color: ${theme.colors.white};
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     gap: 2rem;
 
     @media (max-width: 1280px) {
@@ -62,43 +56,58 @@ export const LoginSection = styled.section`
         gap: 1.8rem;
     }
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 0 3.2rem 3.2rem 0;
+    background-color: ${theme.colors.white};
+`;
+
+export const InputsName = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    gap: 1.8rem;
+
+    input {
+        width: 100%;
+    }
+
+    @media (max-width: 800px) {
+        grid-template-columns: 1fr;
+    }
+`;
+
+export const InputsPassword = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    gap: 1.8rem;
+
+    input {
+        width: 100%;
+    }
+
+    @media (max-width: 800px) {
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const Title = styled.h1`
-    font-size: 3.6rem;
     color: ${theme.colors.blue[700]};
 `;
 
 export const Greetings = styled.p`
-    font-size: 1.8rem;
     color: ${theme.colors.blue[400]};
-    margin-bottom: 4.8rem;
-`;
-
-
-export const DecorativeSection = styled.section`
-    height: 100%;
-    border-radius: 0 3.2rem 3.2rem 0;
-    position: relative;
-
-    @media (max-width: 800px) {
-        border-radius: 3.2rem;
-    }
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: ${theme.colors.blue[500]}
-    
-
+    margin-bottom: 2rem;
 `;
 
 export const Center = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     span {
         color: ${theme.colors.blue[400]};
     }
@@ -113,6 +122,21 @@ export const Center = styled.div`
             text-decoration: underline;
         }
     }
-
 `;
 
+export const DecorativeSection = styled.section`
+    height: 100%;
+    border-radius: 3.2rem 0 0 3.2rem;
+    position: relative;
+
+    @media (max-width: 800px) {
+        border-radius: 3.2rem;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: ${theme.colors.blue[500]}
+
+`;
